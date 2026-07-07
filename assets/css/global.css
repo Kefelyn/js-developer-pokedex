@@ -1,6 +1,9 @@
 * {
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -14,6 +17,63 @@ body {
     background-color: #fff;
 }
 
+dialog {
+    height: 100%;
+    border: none;
+    border-radius: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal button {
+    padding: 1rem 1.5rem;
+    margin: .25rem 0;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+}
+
+.pokemon-details {
+    width: 100%;
+}
+
+.pokemon-details .details {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem;
+    color: white;
+    border-radius: 0 0 5rem 5rem;
+}
+
+.pokemon-details .name {
+    margin-bottom: 2rem;
+}
+
+.pokemon-details .types .type {
+    color: #fff;
+    padding: .5rem .75rem;
+    margin: .5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.pokemon-details .detail img {
+    max-width: 100%;
+    height: 125px;
+}
+
 @media screen and (min-width:992px) {
     .content {
         max-width: 992px;
@@ -22,4 +82,3 @@ body {
         border-radius: 1rem;
     }
 }
-
